@@ -1,20 +1,71 @@
 # Brooks'Books
 
-A web-based platform designed to foster community engagement through reading by creating digital connections between physical books and readers. The platform encourages young readers through artistic expression, vocabulary building, and community interaction.
+A web-based platform designed to foster community engagement through reading by creating digital connections between physical books and readers. The platform encourages young readers through artistic expression, vocabulary building, and community interaction. The ultimate vision is to implement a reward system where points (as proof of reading) can be exchanged for toys, similar to the Accelerated Reader program but designed for an outside of the classroom environment via LitteFreeLibrary. The graphdatabase will provide a method to explore similar books based upon user-selected factors.
 
 ## Features
+Frontend Architecture:
+-Context-based state management (AuthContext)
+-Responsive design with Tailwind CSS
+-Component-based structure with reusable UI elements
+-Real-time WebSocket integration
 
-- **Book Management**: Browse, search, and organize books
-- **Drawing Submissions**: Share artistic interpretations of books
-- **Vocabulary Tools**: 
-  - Etymology exploration
-  - Multi-language translations
-  - Interactive vocabulary learning
-- **Community Features**:
-  - Discussion boards
-  - Drawing sharing
-  - Points and achievements system
-- **Little Free Library Integration**: Digital interface for physical book locations
+Backend Structure:
+-RESTful API architecture
+-JWT authentication
+-Modular routing system
+-Middleware for authentication, file uploads, and rate limiting
+
+Database Design:
+-MongoDB for user data, books, and interactions
+-Neo4j for graph-based book relationships and recommendations
+-Caching implementation for performance optimization
+
+External Integrations:
+-AWS S3 for image storage
+-Google Cloud Translation API
+-Tenor GIF API
+-Project Gutenberg API
+
+Feature Set
+Currently Implemented
+
+User Management
+-Authentication system
+-Profile management
+-Progress tracking
+-Points and achievements system
+
+Book Features
+-Book catalog management
+-Series organization
+-Drawing uploads and sharing
+-Community interactions (likes, comments)
+
+
+Learning Tools
+-Vocabulary tracking
+-Etymology exploration
+-Multi-language translations
+-Quiz generation
+
+
+Community Features
+-Real-time chat (Treehouse)
+-Discussion boards
+-Drawing sharing
+-Community engagement metrics
+
+In Development
+-Enhanced Recommendation System
+-Advanced Book Series Management
+-Expanded Learning Analytics
+-Geographic Library Integration
+
+Planned Features
+-Mobile Application
+-Advanced Quiz System
+-AI-Powered Content Moderation
+-Extended Library Network Integration
 
 ## Tech Stack
 
@@ -44,23 +95,19 @@ A web-based platform designed to foster community engagement through reading by 
 git clone https://github.com/Brooks-Cole/brooks-books.git
 
 3. Install dependencies
-# Frontend
 cd frontend
 npm install
-# Backend
 cd ../backend
 npm install
 cd brooks-books
 
-3. Set up environment variables
+3. Set up environment variables:
 Create .env files in both frontend and backend directories
 Add necessary environment variables
 
-4. Start the development servers
-# Backend
+5. Start the development servers
 cd backend
 npm start
-# Frontend
 cd frontend
 npm start
 
