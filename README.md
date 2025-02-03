@@ -68,7 +68,7 @@ npm start
 ___________________
 **Project Structure: **
 
-'''Bash
+```bash
 .
 ├── .gitignore
 ├── .vscode
@@ -270,7 +270,7 @@ ___________________
 └── temp.txt
 
 34 directories, 165 files
-'''
+```
 
 **Contributing**
 Contributions are welcome! Please feel free to submit a Pull Request.
