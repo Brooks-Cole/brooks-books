@@ -1,0 +1,71 @@
+.
+├── config
+│   └── database.js
+├── folder_structure.txt
+├── package-lock.json
+├── package.json
+├── src
+│   ├── config
+│   │   ├── cors.js
+│   │   ├── neo4j.js
+│   │   └── s3.js
+│   ├── controllers
+│   │   └── graphController.js
+│   ├── data
+│   │   └── bookSeries.js
+│   ├── middleware
+│   │   ├── adminAuth.js
+│   │   ├── auth.js
+│   │   ├── csrf.js
+│   │   ├── graphAuth.js
+│   │   ├── graphError.js
+│   │   ├── points.js
+│   │   ├── rateLimit.js
+│   │   └── upload.js
+│   ├── models
+│   │   ├── Book.js
+│   │   ├── ChatMessage.js
+│   │   ├── Discussion.js
+│   │   ├── Series.js
+│   │   ├── User.js
+│   │   ├── UserProgress.js
+│   │   ├── Vocabulary.js
+│   │   ├── iResult.js
+│   │   └── iScenario.js
+│   ├── routes
+│   │   ├── admin.js
+│   │   ├── auth.js
+│   │   ├── bookRoutes.js
+│   │   ├── books.js
+│   │   ├── discussions.js
+│   │   ├── gifs.js
+│   │   ├── graphRoutes.js
+│   │   ├── iscenario.js
+│   │   ├── maintenance.js
+│   │   ├── quiz.js
+│   │   ├── recommendations.js
+│   │   ├── series.js
+│   │   ├── translation.js
+│   │   ├── users.js
+│   │   └── vocabulary.js
+│   ├── scripts
+│   │   ├── initSeries.js
+│   │   └── iseedScenario.js
+│   ├── server.js
+│   ├── services
+│   │   ├── autoTaggingService.js
+│   │   ├── cache.js
+│   │   ├── googleBookService.js
+│   │   ├── graphService.js
+│   │   ├── gutenbergService.js
+│   │   ├── quizGenerator.js
+│   │   ├── tenorService.js
+│   │   ├── translation.js
+│   │   ├── translationServices.js
+│   │   └── webSocketService.js
+│   └── utils
+│       └── graphSync.js
+└── uploads
+    └── ExcelPrizeTracker.js
+
+13 directories, 56 files
