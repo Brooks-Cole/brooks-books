@@ -2,71 +2,66 @@
 
 A web-based platform designed to foster community engagement through reading by creating digital connections between physical books and readers. The platform encourages young readers through artistic expression, vocabulary building, and community interaction. The ultimate vision is to implement a reward system where points (as proof of reading) can be exchanged for toys, similar to the Accelerated Reader program but designed for an outside of the classroom environment via LitteFreeLibrary. The graphdatabase will provide a method to explore similar books based upon user-selected factors.
 
+Please note that the Neo4j server will spin down after 48 hours of inactivity, please reach out if you need me to resume it. The website is not currently optimized for mobile devices and may not render on phones.
+
 ## Features
-Frontend Architecture:
--Context-based state management (AuthContext)
--Responsive design with Tailwind CSS
--Component-based structure with reusable UI elements
--Real-time WebSocket integration
 
-Backend Structure:
--RESTful API architecture
--JWT authentication
--Modular routing system
--Middleware for authentication, file uploads, and rate limiting
+### Frontend Architecture:
+- Context-based state management (AuthContext)
+- Responsive design with Tailwind CSS
+- Component-based structure with reusable UI elements
+- Real-time WebSocket integration
 
-Database Design:
--MongoDB for user data, books, and interactions
--Neo4j for graph-based book relationships and recommendations
--Caching implementation for performance optimization
+### Backend Structure:
+- RESTful API architecture
+- JWT authentication
+- Modular routing system
+- Middleware for authentication, file uploads, and rate limiting
 
-External Integrations:
--AWS S3 for image storage
--Google Cloud Translation API
--Tenor GIF API
--Project Gutenberg API
+### Database Design:
+- MongoDB for user data, books, and interactions
+- Neo4j for graph-based book relationships and recommendations
+- Caching implementation for performance optimization
 
-Feature Set
-Currently Implemented
+### External Integrations:
+- AWS S3 for image storage
+- Google Cloud Translation API
+- Tenor GIF API
+- Project Gutenberg API
 
-User Management
--Authentication system
--Profile management
--Progress tracking
--Points and achievements system
+### Feature Set Currently Implemented
 
-Book Features
--Book catalog management
--Series organization
--Drawing uploads and sharing
--Community interactions (likes, comments)
+#### User Management
+- Authentication system
+- Profile management
+- Progress tracking
+- Points and achievements system
 
+#### Book Features
+- Book catalog management
+- Series organization
+- Drawing uploads and sharing
+- Community interactions (likes, comments)
 
-Learning Tools
--Vocabulary tracking
--Etymology exploration
--Multi-language translations
--Quiz generation
+#### Learning Tools
+- Vocabulary tracking
+- Etymology exploration
+- Multi-language translations
+- Quiz generation
 
+#### Community Features
+- Real-time chat (Treehouse)
+- Discussion boards
+- Drawing sharing
+- Community engagement metrics
 
-Community Features
--Real-time chat (Treehouse)
--Discussion boards
--Drawing sharing
--Community engagement metrics
+### In Development
+- Enhanced Recommendation System
+- Advanced Book Series Management
+- Expanded Learning Analytics
+- Geographic Library Integration
 
-In Development
--Enhanced Recommendation System
--Advanced Book Series Management
--Expanded Learning Analytics
--Geographic Library Integration
-
-Planned Features
--Mobile Application
--Advanced Quiz System
--AI-Powered Content Moderation
--Extended Library Network Integration
-
+  
 ## Tech Stack
 
 - **Frontend**: React.js with Material-UI and Tailwind CSS
@@ -322,4 +317,3 @@ ___________________
 **Contributing**
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-Please note that the Neo4j server will spin down after 48 hours of inactivity, please reach out if you need me to resume it.
